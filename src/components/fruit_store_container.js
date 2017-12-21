@@ -2,9 +2,13 @@ import { connect } from 'react-redux';
 import FruitStore from './fruit_store';
 import { addFruit, removeFruit, deleteFruits, emptyCart, confirmPurchase } from '../actions.js';
 
-const mapStateToProps = state => ({
-  fruitStore: Object.keys(state.fruitStore).map(fruit => state[fruit])
-});
+const mapStateToProps = state => {
+  return {
+    fruitStore: Object.keys(state.fruitStore).map(fruit => state.fruitStore[fruit]),
+    cart: state.cart.map(fruit => state.fruitStore[fruit]),
+    fruitInCart: state.cart
+  };
+};
 
 const mapDispatchProps = dispatch => ({
   addFruit: fruit => dispatch(addFruit(fruit)),
