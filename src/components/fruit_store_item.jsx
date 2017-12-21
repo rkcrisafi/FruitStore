@@ -15,7 +15,10 @@ const FruitStoreItem = ({ fruit, addToCart, cart }) => {
       <div className="fruit-store-item-name">{name}</div>
       <div className="fruit-store-price-quantity">
         <div className="fruit-store-price">${fruit.price.toFixed(2)}</div>
-        <div className="fruit-store-quantity">{fruit.quantityRemaining} In Stock</div>
+        {fruit.quantityRemaining > 0 ?
+          <div className="fruit-store-quantity">{fruit.quantityRemaining} In Stock</div> :
+          <div className="fruit-store-quantity">Out Of Stock</div>
+        }
       </div>
       {!cart.includes(fruit.itemName) ?
         <button onClick={() => addToCart(fruit.itemName)} className="add-to-cart-item">Add To Cart</button> :
