@@ -28,9 +28,9 @@ const reducer = (state = defaultState, action ) => {
     case ADD_FRUIT:
       if (state.fruitStore[action.fruit].quantityRemaining > newState.fruitStore[action.fruit].numInCart) {
         newState.fruitStore[action.fruit].numInCart++;
-      }
-      if (!newState.cart.includes(action.fruit)) {
-        newState.cart.push(action.fruit);
+        if (!newState.cart.includes(action.fruit)) {
+          newState.cart.push(action.fruit);
+        }
       }
       return newState;
     case REMOVE_FRUIT:
