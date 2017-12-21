@@ -89,6 +89,7 @@
   border-radius: 5px;
   background-color: #3bc898;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .cart-items {
@@ -142,6 +143,7 @@
   margin: 35px 5px 5px 5px;
   padding-bottom: 5px;
   font-size: 10px;
+  cursor: pointer;
 }
 
 .cart-item-quantity {
@@ -162,6 +164,7 @@
   border: none;
   font-size: 15px;
   color: #3bc898;
+  cursor: pointer;
 }
 
 .cart-index-bottom {
@@ -184,6 +187,7 @@
   background: #3bc898;
   color: white;
   margin-top: 0;
+  cursor: pointer;
 }
 
 .confirm-purchase {
@@ -195,4 +199,5 @@
   font-family: 'Open Sans', sans-serif;
   margin: 20px 15px 0 0;
   border-radius: 5px;
+  cursor: pointer;
 }
