@@ -1,6 +1,6 @@
-## Instructions
+# Instructions
 
-# In order to see the demo, please run following in terminal:
+### In order to see the demo, please run following in terminal:
 
 1. Clone the repo
 2. cd into the repo
