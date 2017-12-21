@@ -1,11 +1,101 @@
-.App {
+.fruit-store {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.header {
+  height: 75px;
+  border-bottom: 9px solid #3BC898;
+  position: relative;
+}
+
+.header-fruit {
+  position: absolute;
+  bottom: 0px;
+  left: 55px;
+  width: 190px;
+  height: 43px;
+  background-color: #3bc898;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.fruit-store-index {
+  display: flex;
+}
+
+.fruit-store-items {
+  display: flex;
+  min-width: 900px;
+  max-width: 900px;
+  flex-wrap: wrap;
+
+}
+
+.fruit-store-item {
+  width: 200px;
+  height: 300px;
+  margin: 20px 10px 10px 10px;
+  border: 1px solid #3bc898;
+  text-align: center;
+  position: relative;
+}
+
+.fruit-store-item-image-box {
+  width: 200px;
+  height: 150px;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.fruit-store-item-image {
+  min-width: 100px;
+  max-width: 200px;
+  max-height: 150px;
+  min-height: 100px;
+  vertical-align: bottom;
+
 }
+
+.fruit-store-item-name {
+  padding-bottom: 20px;
+}
+
+.fruit-store-price-quantity {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 70px;
+  width: 200px;
+}
+
+.fruit-store-price {
+  font-size: 30px;
+  padding-right: 10px;
+}
+
+.fruit-store-quantity {
+  padding-top: 13px;
+}
+
+.add-to-cart-item {
+  position: absolute;
+  bottom: 30px;
+  right: 25px;
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #3bc898;
+  font-size: 15px;
+}
+
+.cart-index {
+  width: 250px;
+  height: inherit;
+  background-color: #3BC898;
+}
+
+
 
 .App-header {
   background-color: #222;

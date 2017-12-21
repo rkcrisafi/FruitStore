@@ -7,6 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="fruit-store">
+        <header className="header"><div className="header-fruit">Fruit</div></header>
         <FruitStoreContainer store={store}/>
       </div>
     );
