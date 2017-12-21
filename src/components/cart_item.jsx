@@ -4,7 +4,7 @@ const CartItem = ({ props, fruit }) => {
   return (
     <div className="cart-item">
       <div className="cart-item-first-raw">
-        <img src={fruit.imgSrc} className="cart-item-image" width="75" height="100%"/>
+        <img src={fruit.imgSrc} className="cart-item-image" width="65" height="100%"/>
         <button onClick={() => props.removeFruit(fruit.itemName)} className="remove-botton">-</button>
         <div className="cart-item-quantity">{fruit.numInCart}</div>
         <button onClick={() => props.addFruit(fruit.itemName)} className="add-botton">+</button>

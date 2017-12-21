@@ -28,9 +28,9 @@ const FruitStore = (props) => {
         </ul>
         <div className="cart-index-bottom">
           <div className="cart-total">Total: ${total.toFixed(2)}</div>
-          <button onClick={() => props.emptyCart()}>Empty Cart</button>
-          <button onClick={() => props.confirmPurchase()}>Confirm Purchase</button>
+          <button onClick={() => props.emptyCart()} className="empty-cart-button">Empty Cart</button>
         </div>
+        <button onClick={() => props.confirmPurchase()} className="confirm-purchase">Confirm Purchase</button>
       </div>
 
     </div>

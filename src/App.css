@@ -114,20 +114,20 @@
 }
 
 .cart-item-image {
-  max-height: 75px;
+  max-height: 70px;
   min-height: 50px;
-  overflow: hidden;
 }
 
 .cart-item {
   padding: 0;
   width: 266px;
-  height: 100px;
+  height: 110px;
   background-color: white;
   border: 2px solid #3bc898;
   margin-bottom: 10px;
   text-align: left;
   position: relative;
+  overflow: hidden;
 }
 
 .cart-item-first-raw {
@@ -169,7 +169,30 @@
   text-align: right;
   color: white;
   font-size: 15px;
-  padding-right: 5px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
+}
+
+.cart-total {
+  margin-bottom: 0;
+  padding-right: 5px;
+}
+
+.empty-cart-button {
+  border: none;
+  width: 75px;
+  background: #3bc898;
+  color: white;
+  margin-top: 0;
+}
+
+.confirm-purchase {
+  float: right;
+  background: #c0eee0;
+  width: 200px;
+  height: 35px;
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 20px 15px 0 0;
+  border-radius: 5px;
 }
